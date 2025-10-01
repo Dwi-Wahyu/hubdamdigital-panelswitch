@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Hubdam Digital adalah platform terpadu yang mencakup HubdamShare, Simantik, dan E-Absensi untuk mendukung digitalisasi di lingkungan Hubdam XIV/Hasanuddin."
+    />
+    <meta
+      name="keywords"
+      content="Hubdam Digital, HubdamShare, Simantik, E-Absensi, Inventaris, Absensi Digital, Buku Saku Prajurit, Kodam XIV Hasanuddin"
+    />
+    <meta name="author" content="Dwi Wahyu Ilahi" />
+    <title>Hubdam Digital - Panel Switch</title>
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+      @keyframes fadeInSlideDown {
+        from {
+          opacity: 0;
+          transform: translateY(-30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .animate-appear-1 {
+        animation: fadeInSlideDown 0.8s ease-out forwards;
+        opacity: 0;
+      }
+      .animate-appear-2 {
+        animation: fadeInSlideDown 0.8s ease-out forwards;
+        animation-delay: 0.2s;
+        opacity: 0;
+      }
+    </style>
+  </head>
+
+  <body
+    class="bg-[#0F172A] text-[#F1F5F9] min-h-screen flex flex-col justify-center items-center p-6"
+  >
+    <h1
+      class="text-xl md:text-2xl font-bold mb-10 text-center animate-appear-1"
+    >
+      Panel Switch
+    </h1>
+
+    <main class="main-container w-full animate-appear-2">
+      <section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <a
+          href="https://bukusaku.hubdamdigital.com"
+          class="relative h-60 rounded-xl transition-all duration-300 transform overflow-hidden bg-[url('apps/bukusaku.png')] bg-cover bg-center text-[#FFFFFF] shadow-xl shadow-black/20 hover:ring-2 ring-offset-4 ring-offset-[#0F172A] hover:ring-[#FFD32A] hover:scale-[1.02]"
+        >
+          <div class="absolute inset-0 bg-black/50"></div>
+
+          <div class="absolute bottom-0 inset-x-0 p-4 flex justify-center z-10">
+            <p class="text-xl font-semibold text-shadow">BukuSaku Prajurit</p>
+          </div>
+        </a>
+
+        <a
+          href="https://hubdamdigital.com/hubdamshare"
+          class="relative h-60 rounded-xl transition-all duration-300 transform overflow-hidden bg-[url('apps/hubdamshare.png')] bg-cover bg-center text-[#FFFFFF] shadow-xl shadow-black/20 hover:ring-2 ring-offset-4 ring-offset-[#0F172A] hover:ring-[#FFD32A] hover:scale-[1.02]"
+        >
+          <div class="absolute inset-0 bg-black/50"></div>
+
+          <div class="absolute bottom-0 inset-x-0 p-4 flex justify-center z-10">
+            <p class="text-xl font-semibold text-shadow">HubdamShare</p>
+          </div>
+        </a>
+
+        <a
+          href="https://hubdamdigital.com/simantik"
+          class="relative h-60 rounded-xl transition-all duration-300 transform overflow-hidden bg-[url('apps/simantik.png')] bg-cover bg-center text-[#FFFFFF] shadow-xl shadow-black/20 hover:ring-2 ring-offset-4 ring-offset-[#0F172A] hover:ring-[#FFD32A] hover:scale-[1.02]"
+        >
+          <div class="absolute inset-0 bg-black/50"></div>
+
+          <div class="absolute bottom-0 inset-x-0 p-4 flex justify-center z-10">
+            <p class="text-xl font-semibold text-shadow">Simantik</p>
+          </div>
+        </a>
+
+        <a
+          href="https://hubdamdigital.com/eabsensi"
+          class="relative h-60 rounded-xl transition-all duration-300 transform overflow-hidden bg-[url('apps/eabsen.png')] bg-cover bg-center text-[#FFFFFF] shadow-xl shadow-black/20 hover:ring-2 ring-offset-4 ring-offset-[#0F172A] hover:ring-[#FFD32A] hover:scale-[1.02]"
+        >
+          <div class="absolute inset-0 bg-black/50"></div>
+
+          <div class="absolute bottom-0 inset-x-0 p-4 flex justify-center z-10">
+            <p class="text-xl font-semibold text-shadow">E-Absensi</p>
+          </div>
+        </a>
+      </section>
+    </main>
+  </body>
+</html>
